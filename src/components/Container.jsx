@@ -1,7 +1,8 @@
 import { memo } from "react";
+import classNames from "../utils/classNames";
 
-const Container = ({ children }) => {
-  return <div className="container mx-auto">{children}</div>;
+const Container = ({ children, className }) => {
+  return <div className={classNames("container mx-auto", className)}>{children}</div>;
 };
 
 export default memo(Container);
